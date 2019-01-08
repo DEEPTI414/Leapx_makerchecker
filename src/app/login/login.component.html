@@ -21,7 +21,7 @@
                   </mat-grid-tile>
                   <mat-grid-tile [colspan]="7">
                       <mat-form-field class="justifier">
-                          <input matInput placeholder="Username" text="text">
+                          <input matInput placeholder="Username" text="text" #email>
                       </mat-form-field>
                   </mat-grid-tile>
               </mat-grid-list>
@@ -34,13 +34,13 @@
                   </mat-grid-tile>
                   <mat-grid-tile [colspan]="7">
                       <mat-form-field class="justifier">
-                          <input matInput placeholder="Password" text="password">
+                          <input matInput placeholder="Password" text="password" #password type="password">
                       </mat-form-field>
                   </mat-grid-tile>
               </mat-grid-list>
               <!-- Markup for getting Password ends -->
 
-              <button mat-raised-button class="login-button">
+              <button mat-raised-button class="login-button" (click)="sendLoginRequest(email.value, password.value)">
                   <mat-icon>input</mat-icon> Sign In
               </button>
 
