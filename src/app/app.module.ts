@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { PlaylistComponent } from './playlist/playlist.component';
 import { MatVideoModule } from 'mat-video';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { MatVideoModule } from 'mat-video';
     MatGridListModule,
     MatDatepickerModule,
     MatIconModule,
-    MatVideoModule
+    MatVideoModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
